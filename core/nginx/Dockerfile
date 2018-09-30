@@ -1,6 +1,9 @@
 FROM alpine:3.7
 
-RUN apk add --no-cache nginx nginx-mod-mail python py-jinja2 certbot openssl
+RUN apk add --no-cache nginx nginx-mod-mail python py-jinja2 certbot openssl py2-future py2-pip
+
+RUN pip install -U --no-cache-dir pip && \
+    pip install -U --no-cache-dir certbot
 
 COPY conf /conf
 COPY *.py /

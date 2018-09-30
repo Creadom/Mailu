@@ -31,8 +31,8 @@ relayhost = {{ RELAYHOST }}
 # Recipient delimiter for extended addresses
 recipient_delimiter = {{ RECIPIENT_DELIMITER }}
 
-# Only the front server is allowed to perform xclient
-smtpd_authorized_xclient_hosts={{ FRONT_ADDRESS }}
+# Docker network is allowed to send mail
+smtpd_authorized_xclient_hosts={{ RELAYNETS }}
 
 ###############
 # TLS
