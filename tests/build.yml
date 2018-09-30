@@ -3,42 +3,42 @@ version: '3'
 services:
 
   front:
-    image: creadom/mailu_nginx:latest
+    image: creadom/mailu_nginx:$VERSION
     build: ../core/nginx
 
   imap:
-    image: creadom/mailu_dovecot:latest
+    image: creadom/mailu_dovecot:$VERSION
     build: ../core/dovecot
 
   smtp:
-    image: creadom/mailu_postfix:latest
+    image: creadom/mailu_postfix:$VERSION
     build: ../core/postfix
 
   antispam:
-    image: creadom/mailu_rspamd:latest
+    image: creadom/mailu_rspamd:$VERSION
     build: ../services/rspamd
 
   webdav:
-    image: creadom/mailu_radicale:latest
+    image: creadom/mailu_radicale:$VERSION
     build: ../optional/radicale
 
   admin:
-    image: creadom/mailu_admin:latest
+    image: creadom/mailu_admin:$VERSION
     build: ../core/admin
 
   roundcube:
-    image: creadom/mailu_roundcube:latest
+    image: creadom/mailu_roundcube:$VERSION
     build: ../webmails/roundcube
 
   rainloop:
-    image: creadom/mailu_rainloop:latest
+    image: creadom/mailu_rainloop:$VERSION
     build: ../webmails/rainloop
 
   fetchmail:
-    image: creadom/mailu_fetchmail:latest
+    image: creadom/mailu_fetchmail:$VERSION
     build: ../services/fetchmail
 
   none:
-    image: creadom/mailu_none:latest
+    image: creadom/mailu_none:$VERSION
     build: ../core/none
 
