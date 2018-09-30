@@ -1,7 +1,7 @@
 This is a fork from the original Mailu which will be synced with their changes whenever I have the time to do so.
 This fork is made to adapt the project for docker stack on ARM devices such as Raspberry pi 3B ( the only ARM board I have )
 
-### ORIGINAL README BELOW ###
+### ORIGINAL READOME BELOW ###
 <p align="leftr"><img src="docs/assets/logomark.png" alt="Mailu" height="200px"></p>
 
 
